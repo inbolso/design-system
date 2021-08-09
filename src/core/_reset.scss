@@ -5,10 +5,10 @@
   margin: 0;
   box-sizing: border-box;
   outline: unset;
+  font-family: $font-family;
 }
 
 html {
   color: $color-gray-text-default;
-  font-family: $font-family;
   font-size: 10px;
 }
