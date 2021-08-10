@@ -1,4 +1,90 @@
-@import 'mixins/mixins';
+@mixin button-size($padding, $min, $height, $font-size) {
+  padding: $padding;
+  min-width: $min;
+  height: $height;
+  font-size: $font-size;
+}
+
+@mixin button(
+  $padding,
+  $min-width,
+  $height,
+  $font-size,
+  $background,
+  $hover,
+  $focus-border-color,
+  $active,
+  $disable-background: $background,
+  $color: #fff,
+  $disable-color: $color,
+  $hover-color: $color
+) {
+  margin: 2px;
+  min-width: $min-width;
+  height: $height;
+  background: $background;
+  padding: $padding;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+
+  border: none;
+  border-radius: $border-radius-md;
+
+  line-height: $line-height-distant;
+  font-size: $font-size;
+  font-weight: $font-weight-medium;
+
+  color: $color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-icon,
+  .icon {
+    margin-left: $spacing-xs;
+    height: 20px;
+    width: 20px;
+  }
+
+  .icon-font {
+    margin-left: $spacing-xs;
+    height: 15px;
+    width: 15px;
+  }
+
+  &:hover {
+    background: $hover;
+    color: $hover-color;
+    transition: all 0.3s;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 3px rgba($focus-border-color, $opacity-level-shadow);
+  }
+
+  &:active {
+    background: $active;
+  }
+
+  &:disabled {
+    background: $disable-background;
+    color: $disable-color;
+    cursor: not-allowed;
+  }
+
+  &.cta {
+    @include button-size(16px 32px, 120px, 56px, $font-size-xs);
+  }
+
+  &.large {
+    @include button-size(14px 28px 16px 28px, 104px, 48px, $font-size-xxs);
+  }
+
+  &.small {
+    @include button-size(7px 14px, 72px, 32px, $font-size-xxxs);
+  }
+}
 
 .p-button {
   // Primary button
