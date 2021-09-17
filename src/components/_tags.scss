@@ -1,28 +1,4 @@
-@mixin tag-size($font-size, $padding) {
-  padding: $padding;
-  font-weight: $font-weight-semibold;
-  font-size: $font-size;
-  border-radius: $border-radius-sm;
-  text-transform: uppercase;
-  margin: 2px;
-  text-align: center;
-}
-
-@mixin tag-level($font-size, $padding, $color-1, $color-2: #fff, $border-color: $color-1) {
-  padding: $padding;
-  font-weight: $font-weight-semibold;
-  font-size: $font-size;
-  border-radius: $border-radius-sm;
-  text-transform: uppercase;
-  margin: 2px;
-  text-align: center;
-
-  background: $color-1;
-  color: $color-2;
-  border: 1px solid $border-color;
-  box-sizing: border-box;
-  white-space: nowrap;
-}
+@import '../mixins/tag.mixin';
 
 .p-tag {
   @include tag-level($font-size-caption, 6px 12px, $color-ui-info-lighter, $color-ui-info-default);

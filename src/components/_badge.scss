@@ -1,23 +1,4 @@
-@mixin badge-level($font-size, $padding, $color-1, $color-2: #fff, $border-color: $color-1) {
-  padding: $padding;
-  font-weight: $font-weight-semibold;
-  font-size: $font-size;
-  border-radius: $border-radius-pill;
-  text-transform: uppercase;
-  white-space: nowrap;
-  margin: 2px;
-
-  background: $color-1;
-  color: $color-2;
-  border: 1px solid $border-color;
-  box-sizing: border-box;
-
-  &--secondary {
-    color: $color-1;
-    background-color: $color-2;
-    border-color: $color-2;
-  }
-}
+@import '../mixins/badge.mixin';
 
 .p-badge {
   @include badge-level(

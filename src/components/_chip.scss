@@ -1,42 +1,4 @@
-@mixin chip-size($font-size, $padding) {
-  padding: $padding;
-  font-weight: $font-weight-semibold;
-  font-size: $font-size;
-  border-radius: $border-radius-pill;
-  white-space: nowrap;
-  margin: 2px;
-}
-
-@mixin chip-level($font-size, $padding, $color-1, $color-2: #fff, $border-color: $color-1) {
-  padding: $padding;
-  font-weight: $font-weight-semibold;
-  font-size: $font-size;
-  border-radius: $border-radius-pill;
-  white-space: nowrap;
-  margin: 2px;
-  background: $color-1;
-  color: $color-2;
-  border: $border-width-hairline $border-color;
-  box-sizing: border-box;
-
-  &.secondary {
-    color: $color-1;
-    background: $color-2;
-    border: $color-2;
-  }
-
-  &.no-selected {
-    background: rgba($color-1, $opacity-level-semiopaque);
-    color: $color-2;
-    border: rgba($color-1, $opacity-level-semiopaque);
-
-    &.secondary {
-      background: rgba($color-2, $opacity-level-semiopaque);
-      color: $color-1;
-      border: rgba($color-2, $opacity-level-semiopaque);
-    }
-  }
-}
+@import '../mixins/chip.mixin';
 
 .p-chip {
   @include chip-level($font-size-caption, 6px 12px, $color-ui-info-default, $color-ui-info-lighter);
