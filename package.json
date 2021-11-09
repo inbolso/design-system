@@ -2,7 +2,7 @@
   "name": "@inbolso/design-system",
   "author": "inBolso",
   "description": "Design system da inbolso",
-  "version": "0.1.36-2",
+  "version": "0.1.36-3",
   "private": false,
   "scripts": {
     "build": "sass src/design-system.scss dist/design-system.css  --style compressed",
