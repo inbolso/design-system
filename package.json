@@ -1,6 +1,6 @@
 {
-  "name": "design-system",
-  "description": "Design system da PJA",
+  "name": "@inbolso/design-system",
+  "description": "Design system da inbolso",
   "version": "0.1.36-0",
   "private": false,
   "scripts": {
