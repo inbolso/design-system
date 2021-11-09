@@ -3,10 +3,6 @@
   "description": "Design system da inbolso",
   "version": "0.1.36-2",
   "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/inbolso/design-sytem.git"
-  },
   "scripts": {
     "build": "sass src/design-system.scss dist/design-system.css  --style compressed",
     "watch": "sass --watch src/design-system.scss dist/design-system.css",
