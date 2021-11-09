@@ -14,7 +14,7 @@
     "url": "git://github.com/inbolso/design-sytem.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "sass": "^1.32.5"
