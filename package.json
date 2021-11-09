@@ -1,5 +1,6 @@
 {
   "name": "@inbolso/design-system",
+  "author": "inBolso",
   "description": "Design system da inbolso",
   "version": "0.1.36-2",
   "private": false,
@@ -8,8 +9,12 @@
     "watch": "sass --watch src/design-system.scss dist/design-system.css",
     "bump-version": "yarn version --prepatch && git push --tags"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/inbolso/design-sytem.git"
+  },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@inbolso"
+    "registry":"https://npm.pkg.github.com"
   },
   "dependencies": {
     "sass": "^1.32.5"
