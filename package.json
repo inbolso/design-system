@@ -1,6 +1,6 @@
 {
   "name": "@inbolso/design-system",
-  "author": "inBolso",
+  "author": "inbolso",
   "description": "Design system da inbolso",
   "version": "0.1.36-3",
   "private": false,
@@ -14,7 +14,7 @@
     "url": "git://github.com/inbolso/design-sytem.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/@inbolso"
   },
   "dependencies": {
     "sass": "^1.32.5"
