@@ -9,10 +9,6 @@
     "watch": "sass --watch src/design-system.scss dist/design-system.css",
     "bump-version": "yarn version --prepatch && git push --tags"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/inbolso/design-sytem.git"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@inbolso"
   },
