@@ -2,20 +2,28 @@
   "name": "@inbolso/design-system",
   "author": "inbolso",
   "description": "Design system da inbolso",
-  "version": "0.1.36-3",
+  "version": "0.1.37-0",
   "private": false,
   "scripts": {
     "build": "sass src/design-system.scss dist/design-system.css  --style compressed",
     "watch": "sass --watch src/design-system.scss dist/design-system.css",
-    "bump-version": "yarn version --prepatch && git push --tags"
+    "bump-version": "yarn version --prepatch && git push --tags",
+    "prepare": "husky install"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@inbolso"
   },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn build"
+    ]
+  },
   "dependencies": {
+    "lint-staged": "^11.2.6",
     "sass": "^1.32.5"
   },
   "devDependencies": {
+    "husky": "^7.0.0",
     "prettier": "2.3.2"
   }
 }
