@@ -17,6 +17,7 @@ jobs:
           scope: '@inbolso'
       - run: npm install
       - run: npm run build
+      - run: git push --tags
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
